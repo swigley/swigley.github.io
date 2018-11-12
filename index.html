@@ -1,56 +1,126 @@
-<html>
-<head>
-<title>Sam Wigley: A Few Projects That I Wanted To Share</title>
-</head>
-<body>
-	<h3>Sam Wigley: A Few Projects That I Wanted To Share</h3>
-	<p/> <a href="https://swigley.github.io/NYC%20Subway%20Weather_swigley.pdf">Predicting NYC Subway Ridership</a><p/>
-The purpose of this project was to analyze the features a dataset, containig timestamps from 
-turnstyles of the NYC Subway system, which was combined with data from Weather Underground from the same time period 
-to see if there is a significant difference in subway ridership on rainy and non-­rainy days.  
-The readings are stored in the file in four ­hour bins, with totals on 
-entry and exit counts per bin, per Unit ID, which is effectively the same as a station ID.   
- 
-The dataset includes several other features related to the station and weather conditions including fog, and 
-wind conditions, and latitude and longitude of the station and weather reading.  Another goal is to explore 
-the data to find and show other interesting features that show a correlation with subway ridership, and report 
-some other interesting findings. 
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sam Wigley" />
+        <meta name="copyright" content="Sam Wigley" />
 
-	<p/> <a href="https://swigley.github.io/Predicting%20the%20Compressive%20Strength%20of%20Concrete_swigley.pdf">Predicting the Compressive Strength of Concrete</a><p/>
-This report is an exportatory data analysis on a dataset provided by the University of California at Irvine’s
-Machine Learning department. The dataset contains 1030 observations including 9 quantitative variables.
-The UCI ML Cement dataset records compressive strengh of cement in MPa (Megapascals) given 8 other
-input variables, which are the amonts of the components in Kg, and it’s age in days.
-The readme for the dataset can be downloaded <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/
-concrete/compressive/Concrete_Readme.txt">here.</a>
-This study aims to define what a relatively strong concrete is in terms of compressive strength, then to see if
-we can predict the compressive strength of concrete based on the relative proportion of it’s ingredients and
-it’s age.
-I selected this dataset not only becasue it met the requirements for the Udacity Exporatory Data Analysis
-course final project, but in a former job, I advised on computer datalogger setup for a chemical engineer who
-performed a similar experiment. This particular experiment was to test the compressive strength of concrete
-with varying quantities of synthetic and organic fiber additives. I did a little bit of research just now and found
-the results of that specific study <a href="http://www.solomoncolors.com/ResourceDownload.aspx?id=3085">here.</a> I
-worked for a few months at Buckeye Cellulose during the product development cycle of what became known
-as the UltraFiber 500 concrete reinforcement product. This assigment was one of the specific moments in my
-IT career that led me to pursue a path more related to science and data analytics.
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
 
-	<p/> <a href="https://swigley.github.io/Image%20Classifier%20Project_swigley.html">Identification of Flower Species Using PyTorch</a><p/>
-The goal of this project was to build an image classifier, capable of predicting the species of a flower, given an image of a flower as input.  For input data I used a dataset of images of 102 different labeled flower species 
-from University of Oxford, which is available <a href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html">here.</a>  I transformed and normalized the image data using the Torchvision libraries that come bundled with the PyTorch framework, 
-and built a custom image classifier which is based on a pre-built image classifier provided by the Torchvision project.  A custom classifier output layer was added then trained it on the flower species in this particular dataset using supervised 
-learning techniques on the Tensorflow ML platform using an NVidia GPU.  Finally the model was used on a test dataset to predict the species of flowers in the test data with an accuracy of approximately 80%.
 
-	<p/> <a href="https://swigley.github.io/USEnergyByState">US Energy Production by Type and State</a><p/>
-We were taksed with building an effective data visualizetion that tells a story, allowing a reader to explore trends or patterns. I based the project on D3.js, and used lean HTML and CSS to do all the formatting. I decided to use a dataset on energy production by state at the US Energy Information Administration site.  
-After spending some time with the data, it became clear that looking at only energy production for each state didn't give a lot of perspective.  One issue is larger states, like California completely overshadowed smaller states because the 
-imbalance between their energy production is so great.  It was clear there needed to be some ratio to make the comparisons between states make sense.  I found a dataset showing US population by state for the same time period, 1990 - 2014, on 
-the US Census website.  I also found a dataset on the US Dept. of Commerce Bureau of Economic Analysis website that showed GDP by state for the same time period.  I decided to join both of these datasets by state and year to the energy dataset to 
-compare energy production by state per capita, or energy by state per dollar GDP.   The map data was in GeoJSON format, and was drawn using D3 and SVG.  I used a timer, and some user controls to provide animation and interactivity with the data.  The source code is posted <a href="https://github.com/swigley/USEnergyData">here</a>.
+<meta property="og:title" content="Projects "/>
+<meta property="og:url" content="/pages/projects.html" />
+<meta property="og:description" content="Recent Projects" />
+<meta property="og:site_name" content="Sam Wigley" />
+<meta property="og:article:author" content="Sam Wigley" />
+<meta property="og:article:published_time" content="2018-11-11T22:20:00-06:00" />
+<meta property="" content="2018-11-11T22:30:00-06:00" />
+<meta name="twitter:title" content="Projects ">
+<meta name="twitter:description" content="Recent Projects">
 
-	<p/> <a href="https://github.com/swigley/scala-investigate">Scala OpenDNS Investigate API Client</a><p/>
-I created a simple Scala class to implement a client to the public OpenDNS Investigate API.  This client was used to enhance url and domain data in our datasets used in certain projects for our 
-<a href="https://www.cisco.com/c/en/us/products/security/security-reports.html#~download-the-report">Cisco Annual and Midyear Cybersecurity Reports</a>.  We would use it to add additional fields like the 
-domain creation date, or site reputation to our datasets.
-</body>
+        <title>Projects  · Sam Wigley
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-129080951-1', 'auto');
+    ga('send', 'pageview');
+</script>
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="/"><span class=site-name>Sam Wigley</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href="">Home</a></li>
+                            <li  class="active"><a href="/pages/projects.html">Projects</a></li>
+                            <li ><a href="/categories.html">Categories</a></li>
+                            <li ><a href="/tags.html">Tags</a></li>
+                            <li ><a href="/archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="/pages/projects.html"> Projects  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            <h2>Recent Projects</h2>
+<h3><a href="https://swigley.github.io/USEnergyByState/">US Energy Production by State</a></h3>
+<p>We were taksed with building an effective data visualizetion that tells a story, allowing a reader to explore trends or patterns. I based the project on D3.js, and used lean HTML and CSS to do all the formatting. I decided to use a dataset on energy production by state at the US Energy Information Administration site. After spending some time with the data, it became clear that looking at only energy production for each state didn't give a lot of perspective. One issue is larger states, like California completely overshadowed smaller states because the imbalance between their energy production is so great. It was clear there needed to be some ratio to make the comparisons between states make sense. I found a dataset showing US population by state for the same time period, 1990 - 2014, on the US Census website. I also found a dataset on the US Dept. of Commerce Bureau of Economic Analysis website that showed GDP by state for the same time period. I decided to join both of these datasets by state and year to the energy dataset to compare energy production by state per capita, or energy by state per dollar GDP. The map data was in GeoJSON format, and was drawn using D3 and SVG. I used a timer, and some user controls to provide animation and interactivity with the data. The source code is posted <a href="https://github.com/swigley/USEnergyData">here</a>.</p>
+<h3><a href="./Data%20Analysis.html">Predicting NYC Subway Ridership</a></h3>
+<p>The purpose of this project was to analyze the features a dataset, containig timestamps from turnstyles of the NYC Subway system, which was combined with data from Weather Underground from the same time period to see if there is a significant difference in subway ridership on rainy and non-­rainy days. The readings are stored in the file in four ­hour bins, with totals on entry and exit counts per bin, per Unit ID, which is effectively the same as a station ID. The dataset includes several other features related to the station and weather conditions including fog, and wind conditions, and latitude and longitude of the station and weather reading. Another goal is to explore the data to find and show other interesting features that show a correlation with subway ridership, and report some other interesting findings.</p>
+<h3><a href="./predicting-the-compressive-strength-of-concrete-by-its-composition.html">Predicting the Compressive Strength of Concrete</a></h3>
+<p>This report is an exportatory data analysis on a dataset provided by the University of California at Irvine’s Machine Learning department. The dataset contains 1030 observations including 9 quantitative variables. The UCI ML Cement dataset records compressive strengh of cement in MPa (Megapascals) given 8 other input variables, which are the amonts of the components in Kg, and it’s age in days. The readme for the dataset can be downloaded here. This study aims to define what a relatively strong concrete is in terms of compressive strength, then to see if we can predict the compressive strength of concrete based on the relative proportion of it’s ingredients and it’s age. I selected this dataset not only becasue it met the requirements for the Udacity Exporatory Data Analysis course final project, but in a former job, I advised on computer datalogger setup for a chemical engineer who performed a similar experiment. This particular experiment was to test the compressive strength of concrete with varying quantities of synthetic and organic fiber additives. I did a little bit of research just now and found the results of that specific study here. I worked for a few months at Buckeye Cellulose during the product development cycle of what became known as the UltraFiber 500 concrete reinforcement product. This assigment was one of the specific moments in my IT career that led me to pursue a path more related to science and data analytics.</p>
+<h3><a href="./Image%20Classification.html">Identification of Flower Species Using PyTorch</a></h3>
+<p>The goal of this project was to build an image classifier, capable of predicting the species of a flower, given an image of a flower as input. For input data I used a dataset of images of 102 different labeled flower species from University of Oxford, which is available here. I transformed and normalized the image data using the Torchvision libraries that come bundled with the PyTorch framework, and built a custom image classifier which is based on a pre-built image classifier provided by the Torchvision project. A custom classifier output layer was added then trained it on the flower species in this particular dataset using supervised learning techniques on the Tensorflow ML platform using an NVidia GPU. Finally the model was used on a test dataset to predict the species of flowers in the test data with an accuracy of approximately 80%.</p>
+            
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+<h4>Contact</h4>
+    <a href="#" title="My You can add links in your config file Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-you can add links in your config file sidebar-social-links"></i></a>
+    <a href="#" title="My Another social link Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-another social link sidebar-social-links"></i></a>
+        </div>
+        </section>
+    </div>
+    </article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    
+    </body>
+    <!-- Theme: Elegant built for Pelican
+    License : http://oncrashreboot.com/pelican-elegant -->
 </html>
